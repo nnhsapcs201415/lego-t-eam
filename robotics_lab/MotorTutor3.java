@@ -15,3 +15,7 @@ public class MotorTutor3
         Button.waitForAnyPress();
     }
 }
+
+/*
+ *Motor.A.getTachoCount() / 
+ */ 

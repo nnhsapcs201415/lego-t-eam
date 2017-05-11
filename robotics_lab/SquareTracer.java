@@ -5,6 +5,13 @@ public class SquareTracer
 {
     DifferentialPilot pilot;
    
+    public static void main(String[]args)
+    {
+        SquareTracer sq = new SquareTracer();
+        sq.pilot = new DifferentialPilot(8, 3.5, Motor.A, Motor.C);
+        sq.drawSquare(20); 
+    }
+    
     public void drawSquare(double length) 
     {
         for(int i = 0; i < 4; i++)
@@ -12,14 +19,5 @@ public class SquareTracer
             pilot.travel(length);
             pilot.rotate(90); 
         }
-
     }
-
-    public static void main(String[]args)
-    {
-        SquareTracer sq = new SquareTracer();
-        sq.pilot = new DifferentialPilot(2.25f, 5.5f, Motor.A, Motor.C);
-        sq.drawSquare(20); 
-    }
-
 }

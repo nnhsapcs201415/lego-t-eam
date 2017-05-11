@@ -8,7 +8,7 @@ import lejos.robotics.navigation.DifferentialPilot;
  */
 public class SquareTracer2 
 {
-    DifferentialPilot pilot ;
+    DifferentialPilot pilot;
     public void  drawSquare(float length)
     {
         int direction = 1;
