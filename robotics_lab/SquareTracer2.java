@@ -28,7 +28,7 @@ public class SquareTracer2
         System.out.println(" Square Tracer 2");
         Button.waitForAnyPress();
         SquareTracer2 sq = new SquareTracer2();
-        sq.pilot = new DifferentialPilot(2.25f, 5.5f, Motor.A, Motor.C);
+        sq.pilot = new DifferentialPilot(7.5, 22, Motor.A, Motor.C);
         int direction = 1;
         int length = 20;
         for(int i = 0; i<4; i++)

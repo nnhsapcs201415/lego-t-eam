@@ -10,7 +10,7 @@ public class SteerTest
 {
     public static void main( String[] args)
     {
-        DifferentialPilot pilot = new DifferentialPilot(2.25f, 4.8f, Motor.A, Motor.C); //units: inches
+        DifferentialPilot pilot = new DifferentialPilot(7.5, 22, Motor.A, Motor.C); //units: inches
         ButtonCounter bc = new ButtonCounter();
         while(true)
         {
