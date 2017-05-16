@@ -8,20 +8,22 @@ import lejos.robotics.navigation.DifferentialPilot;
  * Robot that stops if it hits something before it completes its travel.
  */
 public class TravelTest {
-  DifferentialPilot pilot;
-  TouchSensor bump = new TouchSensor(SensorPort.S1);
+    DifferentialPilot pilot = new DifferentialPilot(7.5, 22, Motor.A, Motor.C);
+    TouchSensor bump = new TouchSensor(SensorPort.S1);
+  
   public void go() {
-    pilot.travel(20, true);
+    pilot.travel(100, true);
     while (pilot.isMoving()) {
-      if (bump.isPressed()) pilot.stop();
+      if (bump.isPressed()) {
+          pilot.stop();
     }
     System.out.println(" "+pilot.getMovement().getDistanceTraveled());
     Button.waitForAnyPress();
   }
-
+}
   public static void main(String[] args) {
     TravelTest traveler = new TravelTest();
-    traveler.pilot = new DifferentialPilot(2.25f, 5.5f, Motor.A, Motor.C);
+    traveler.pilot = new DifferentialPilot(7.5, 22, Motor.A, Motor.C);
     traveler.go();
   }
 }
