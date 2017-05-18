@@ -1,7 +1,4 @@
 #BlueJ class context
-comment0.params=input
-comment0.target=LightSensorListener(lejos.nxt.SensorPort)
-comment0.text=\r\n\ Default\ constructor\ for\ objects\ of\ class\ LightSensorListener\r\n
-comment1.params=aSource\ aOldValue\ aNewValue
-comment1.target=void\ stateChanged(lejos.nxt.SensorPort,\ int,\ int)
-numComments=2
+comment0.params=aSource\ aOldValue\ aNewValue
+comment0.target=void\ stateChanged(lejos.nxt.SensorPort,\ int,\ int)
+numComments=1
